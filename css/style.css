@@ -232,9 +232,24 @@ h1,h2,h3,h4,h5,p,button,span{
     .second .container {
         height: 350px;
     }
+    .second .container .social-icons{
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .second .container .social-icons i {
-        font-size: 20px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /* background-color: #fff; */
+        font-size: 18px;
     }
 
     .buttons {
@@ -252,7 +267,7 @@ h1,h2,h3,h4,h5,p,button,span{
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     .holder {
         height: 400px;
     }
@@ -276,15 +291,16 @@ h1,h2,h3,h4,h5,p,button,span{
     }
 
     .image img {
-        height: 70px;
-        width: 70px;
+        height: 120px;
+        width: 120px;
+        align-items: center;
         margin-top: 5px;
         margin-left: 5px;
     }
 
     .inner .write-up {
         width: 200px;
-        top: 60px;
+        top: 80px;
     }
 
     .inner h1 {
@@ -292,7 +308,7 @@ h1,h2,h3,h4,h5,p,button,span{
     }
 
     .inner p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .second {
@@ -304,9 +320,28 @@ h1,h2,h3,h4,h5,p,button,span{
         height: 280px;
     }
 
+    .second .container .social-icons{
+        position: relative;
+        padding-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap:8px;
+        flex-wrap: wrap;
+
+    }
     .second .container .social-icons i {
-        font-size: 16px;
-        margin: 0 6px;
+        position: relative;
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        /* margin: 0 6px; */
+        /* padding: 5px; */
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        transition: background 0.3s;
+        color: #000;
     }
 
     .buttons {
