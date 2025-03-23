@@ -9,6 +9,13 @@ h1,h2,h3,h4,h5,p,button,span{
     font-family: "Poppins", sans-serif;
 }
 
+.home-page{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* display: none; */
+}
+
 .holder{
     position: relative;
     width: 100%;
@@ -65,6 +72,7 @@ h1,h2,h3,h4,h5,p,button,span{
     /* border: 4px solid #fff; */
     border-radius: 50%;
     object-fit: cover;
+    object-position: bottom;
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -188,6 +196,460 @@ h1,h2,h3,h4,h5,p,button,span{
 .footer span{
     color: #000;
     font-weight: 700;
+}
+
+/* portfolio */
+
+.portfolio{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav h1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #a700ff;
+    text-align: center;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 35px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.nav ul{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.nav ul li{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 60px;
+    list-style: none;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+.nav ul li:hover{
+    font-weight: bold;
+    color: #a700ff;
+    cursor: pointer;
+    border-bottom: 2px solid #a700ff;
+}
+
+.nav h2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #a700ff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 600px;
+/*    background-color: red;*/
+    display: flex;
+}
+
+
+.home .box1{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+
+.home .box1 .write-up{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+/*    background-color: red;*/
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.home .box1 p{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    font-weight: 500;
+    
+}
+
+.home .box1 h1{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.home .box1 span{
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #a700ff;
+}
+
+.home .box1 .texts{
+    position: relative;
+    width: 450px;
+    height: 60px;
+}
+
+.home .box1 .texts p{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    color: rgba(0, 0, 0, 0.53);
+}
+
+.home .box1 .holder{
+    position: relative;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    margin-top: 10px;
+/*    background-color: red;*/
+}
+
+.home .box1 .holder button{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-family: Poppins;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.home .box1 .holder button:hover{
+    width: 170px;
+}
+
+.home .box1 .holder button:first-child{
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.home .box1 .holder button:first-child:hover{
+    background-color: #a700ff;
+    font-weight: bold;
+}
+
+.home .box1 .holder button:last-child{
+    background-color: #a700ff;
+    color: #fff;
+}
+
+.home .box1 .holder button:last-child:hover{
+    background-color: #000;
+    font-weight: bold;
+}
+
+.home .box2{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.home .box2 .background{
+    position: relative;
+    width: 400px;
+    height: 400px;
+/*    background-color: red;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(167, 0, 255, 0.24);
+    
+}
+
+
+.home .box2 .background .photo{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.home .box2 .background .photo img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+}
+
+.projects{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.projects h1{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects .hold{
+    position: relative;
+    width: 100%;
+    height: 400px;
+/*    background-color: red;*/
+    display: flex;
+    padding: 10px;
+}
+
+.projects .hold .col-1{
+    position: relative;
+    width: 40%;
+    height: 370px;
+/*    background-color: aqua;*/
+    padding: 10px;
+}
+
+.projects .hold .col-1 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.projects .hold .col-1 h1{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-bottom: -0.5px;
+    text-align: left;
+    
+}
+
+.projects .hold .col-1 p{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+}
+
+.projects .hold .col-1 .part1{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #cbcccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.projects .hold .col-1 .part1 .pic{
+    position: absolute;
+    width: 270px;
+    height: 230px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects .hold .col-1 .part1 .pic img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects .hold .col-2{
+    position: relative;
+    width: 60%;
+    height: 370px;
+/*    background-color: #f7f700;*/
+    padding: 10px;
+}
+
+.projects .hold .col-2 h1{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-bottom: -0.5px;
+    text-align: left;
+}
+
+.projects .hold .col-2 p{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+}
+
+.projects .hold .col-2 .part2{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #cbcccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.projects .hold .col-2 .part2 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects .hold .col-2 .part2 .pic{
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects .hold .col-2 .part2 .pic img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff8f8;
+    padding: 70px 50px;
+    
+}
+
+.about .write-up{
+    position: relative;
+    width: 900px;
+    height: 900px;
+    background-color: #fff8f8;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.about .write-up h1{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: Poppins;
+    margin-bottom: 50px;
+    font-size: 35px;
+    
+}
+
+.about .write-up p{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    text-align: center;
+    
+}
+
+.about .write-up span{
+    position: relative;
+    width: auto;
+    height: auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.foot{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    padding: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.foot p{
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #000;
+    text-align: center;
 }
 
 /* /////////////////////////////// */
