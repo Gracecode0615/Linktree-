@@ -14,14 +14,22 @@
 <body>
 
     <div id="firstpage" class="home-page" >
+        
     <div class="holder">
+       
+        
         <img class="img" src="img/last.jpg">
+        
+      
     
         <div class="inner">
+            
 
         <div class="circle">
             <div class="image"><img src="img/profile2.jpg" alt=""></div>
         </div>
+
+        <button onclick="enterform()">Create profile</button>
 
         <div class="write-up">
         <h1>Orji Victor</h1>
@@ -270,7 +278,7 @@
 
     <!-- form -->
 
-    <div class="form-page" style="display: none;">
+    <div id="formpage" class="form-page" style="display: none;">
 
         <h1>USER PROFILE</h1>
 
@@ -377,6 +385,11 @@
                 function opennextpage() {
                     document.getElementById("firstpage").style.display = "none";
                     document.getElementById("secondpage").style.display = "block";
+                }
+
+                function enterform() {
+                    document.getElementById("firstpage").style.display = "none";
+                    document.getElementById("formpage").style.display = "block";
                 }
 
 
